@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-14",
+    "lru-cache": "^6.0.0"
+  },
+  "name": "thermometer",
+  "version": "1.0.0",
+  "main": "thermometer.js",
+  "license": "GPLv2"
+}

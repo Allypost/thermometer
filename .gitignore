@@ -1,0 +1,3 @@
+# Binaries (compiled stuff)
+bin/*
+!bin/.gitkeep
