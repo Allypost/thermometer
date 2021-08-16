@@ -205,14 +205,12 @@ func setupDb() (err error) {
 }
 
 func insertMeasurement(measurement ThermometerMeasurement) {
-	_, err := db.Exec(
+	db.Exec(
 		`insert into "measurements" ("address", "temperature", "humidity") values ($1, $2, $3)`,
 		measurement.Address,
 		measurement.Temperature,
 		measurement.Humidity,
 	)
-
-	checkError(err)
 }
 
 func printMeasurements() {
